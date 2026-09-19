@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.playerArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  min-width: 0;
+}
+
+.lessonInfo {
+  margin-top: 20px;
+}
+
+.lessonTitle {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.lockedLesson {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.lockIconLarge {
+  font-size: 64px;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+.lockedTitle {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 12px 0;
+}
+
+.lockedDesc {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin: 0 0 24px 0;
+  text-align: center;
+}
+
+.startFirstButton {
+  padding: 12px 32px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.startFirstButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(15, 76, 92, 0.3);
+}
